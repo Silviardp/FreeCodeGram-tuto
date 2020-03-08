@@ -13,9 +13,9 @@
           <div class="pr-5"><strong>39.7k</strong> followers</div>
           <div class="pr-5"><strong>235</strong> following</div>
         </div>
-        <div class="pt-4 font-weight-bold">freeCodeCamp.org</div>
-        <div class="">We're a global community of millions of people learning to code together. We're an open source, donor-supported, 501(c)(3) nonprofit.</div>
-        <div class=""><a href="www.freecodecamp.org" class="">www.freecodecamp.org</a></div>
+        <div class="pt-4 font-weight-bold">{{ $user->profile->title }}</div>
+        <div class="">{{ $user->profile->description}}</div>
+      <div class=""><a href="" class="">{{ $user->profile->url}}</a></div>
       </div>
   </div>
 
