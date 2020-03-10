@@ -32,9 +32,9 @@
            <label for="image" class="col-md-4 col-form-label">Post image</label>
             <input type="file" name="image" class="form-control-file" id="image">
 
-             @error('image')
-                      <strong>{{ $message }}</strong>
-              @enderror
+          @if ($errors->has('image'))
+                      <strong>{{ $errors->first('image') }}</strong>
+            @endif
           </div>
 
           <div class="row pt-4">
